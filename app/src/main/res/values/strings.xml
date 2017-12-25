@@ -1,0 +1,38 @@
+<resources>
+    <string name="prod_list_name">Chemist Product List</string>
+    <string name="perscrip_name">Prescription Order</string>
+    <string name="home_name">Derek Aherne Assign3 2017</string>
+
+    <string name="product_tv">Chemist product list</string>
+    <string name="prescription_tv">Order prescriptions</string>
+
+    <string name="pills">PHARMACY</string>
+    <string name="perfume">FRAGRANCE</string>
+    <string name="lip">COSMETICS</string>
+    <string name="gift">GIFT BOXES</string>
+    <string name="camera">PHOTO SERVICES</string>
+    <string name="bath">TOILETRIES</string>
+    <string name="cream">SKIN CARE</string>
+
+    <string name="pills_P">Upto 50% Off</string>
+    <string name="perfume_P">"25% of Armani</string>
+    <string name="lip_P">Upto 30% off </string>
+    <string name="gift_P">Value Gift Boxes for xmas</string>
+    <string name="camera_P">99c per A5</string>
+    <string name="bath_P">50% off products</string>
+    <string name="cream_P">65% off all items</string>
+
+    <string name="name_hint">Enter your name</string>
+    <string name="other">Other instructions (optional)</string>
+    <string name="photo_text">Take a photo of your prescription</string>
+    <string name="coll_time">Pick a collection time</string>
+    <string name="send">SEND</string>
+
+    <string-array name="time_array">
+        <item>1 HR</item>
+        <item>2 HR</item>
+        <item>3 HRS</item>
+        <item>6 HRS</item>
+        <item>24 HRS</item>
+    </string-array>
+</resources>
