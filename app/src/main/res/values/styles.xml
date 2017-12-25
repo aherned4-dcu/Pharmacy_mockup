@@ -5,5 +5,9 @@
         <!-- Customize your theme here. -->
 
     </style>
+    <!-- https://stackoverflow.com/questions/42684717/rounded-corners-on-material-button-->
+    <style name="AppTheme.RoundedCornerMaterialButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/rounded</item>
+    </style>
 
 </resources>

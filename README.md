@@ -16,10 +16,10 @@ I used the following environment to develop this assignment. Minimum SDK 23, And
 
 
 All icons used in the chemist product list activity are courtesy of www.flaticon.com - the authors of each are attribuited below;
-Toiletries icon made by Vectors Market from www.flaticon.com is licensed by http://creativecommons.org/licenses/by/3.0/
-Gift icon made by Vectors Market from www.flaticon.com is licensed by http://creativecommons.org/licenses/by/3.0/
-Cosmetics icon made by Freepik from www.flaticon.com is licensed by http://creativecommons.org/licenses/by/3.0/
-Fragrance icon made by Roundicons from www.flaticon.com is licensed by http://creativecommons.org/licenses/by/3.0/
-Skin care icon made by Roundicons from www.flaticon.com is licensed by http://creativecommons.org/licenses/by/3.0/
-Pharmacy icon made by Prosymbols from www.flaticon.com is licensed by http://creativecommons.org/licenses/by/3.0/
-Photo icon made by Prosymbols from www.flaticon.com is licensed by http://creativecommons.org/licenses/by/3.0/
+Toiletries icon made by Vectors Market from www.flaticon.com is licensed by http://creativecommons.org/licenses/by/3.0
+Gift icon made by Vectors Market from www.flaticon.com is licensed by http://creativecommons.org/licenses/by/3.0
+Cosmetics icon made by Freepik from www.flaticon.com is licensed by http://creativecommons.org/licenses/by/3.0
+Fragrance icon made by Roundicons from www.flaticon.com is licensed by http://creativecommons.org/licenses/by/3.0
+Skin care icon made by Roundicons from www.flaticon.com is licensed by http://creativecommons.org/licenses/by/3.0
+Pharmacy icon made by Prosymbols from www.flaticon.com is licensed by http://creativecommons.org/licenses/by/3.0
+Photo icon made by Prosymbols from www.flaticon.com is licensed by http://creativecommons.org/licenses/by/3.0

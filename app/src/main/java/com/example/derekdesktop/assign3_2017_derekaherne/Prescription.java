@@ -10,7 +10,6 @@ import android.net.Uri;
 import android.provider.MediaStore;
 import android.widget.Spinner;
 
-
 /**
  * Created by Derek desktop on 25/12/2017.
  */
@@ -20,8 +19,11 @@ public class Prescription extends AppCompatActivity {
      * URL: https://stackoverflow.com/questions/14545139/android-back-button-in-the-title-bar
      * Permission: MIT Licence Retrieved on:1Oth November 2017  */
 
+    //https://developer.android.com/guide/topics/ui/controls/spinner.html
+
     public static final String TAG = Prescription.class.getSimpleName(); //Log tag
-    private Spinner spinner;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,10 +37,7 @@ public class Prescription extends AppCompatActivity {
         Log.i(TAG,"inside on create method");
     }
 
-    public void addListenerOnSpinnerItemSelection() {
-        spinner = (Spinner) findViewById(R.id.spinner);
-        //spinner.setOnItemSelectedListener(new CustomOnItemSelectedListener());
-    }
+
 
     public void onClickSend (View v){
         //extract text from EditText fields
@@ -49,17 +48,19 @@ public class Prescription extends AppCompatActivity {
         TextView textViewName = (TextView) findViewById(R.id.name);
         TextView textViewInfo = (TextView) findViewById(R.id.otherInfo);
 
-        String to = "pharmacy@pharmacy.com";
-        String subject1 = "Name: "+textViewName.getText().toString()+"\nAdditional Instructions: "+textViewInfo.getText().toString()+"\nCollection Time: "+textViewInfo.getText().toString();
+        Spinner spinner = (Spinner) findViewById(R.id.spinner_time);
+        String selected = spinner.getItemAtPosition(spinner.getSelectedItemPosition()).toString();
 
+        String to = getString(R.string.email_recip);
+        String subject1 = getString(R.string.name)+": "+textViewName.getText().toString()+"\n"+getString(R.string.add_inst)+": "+textViewInfo.getText().toString()+"\n"+getString(R.string.coll_t)+": "+selected;
         //open an email app and set the fields using the text from the previous activity
         Intent i = new Intent(Intent.ACTION_SENDTO);
         i.setType("message/rfc822"); // ensure only email apps
         i.setData(Uri.parse("mailto:"+to)); //recipient
-        i.putExtra(Intent.EXTRA_SUBJECT, "Prescription Order"); //subject
+        i.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.email_subject)+textViewName.getText().toString()); //subject
         i.putExtra(android.content.Intent.EXTRA_TEXT,subject1); //bofy
         startActivity(Intent.createChooser(i, "Send mail..."));
-        Log.i(TAG," inside onSend");
+        Log.i(TAG," inside onClickSend");
     }
 
     public void onClickCam (View v){

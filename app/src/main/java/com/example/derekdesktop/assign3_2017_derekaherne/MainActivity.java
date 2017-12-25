@@ -1,12 +1,13 @@
 
 
 package com.example.derekdesktop.assign3_2017_derekaherne;
-        import android.content.Intent;
-        import android.support.v7.app.AppCompatActivity;
-        import android.os.Bundle;
-        import android.util.Log;
-        import android.view.View;
-        import android.widget.EditText;
+
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+
 /**
  * Created by Derek desktop on 25/12/2017.
  */

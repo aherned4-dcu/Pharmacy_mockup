@@ -10,34 +10,30 @@
     <Button
         android:id="@+id/button"
         android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:background="#3F51B5"
+        android:layout_height="wrap_content"
+
         android:clickable="true"
         android:onClick="onClickSend"
         android:text="@string/send"
         android:textColor="#ffff"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_constraintLeft_creator="1" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        style="@style/AppTheme.RoundedCornerMaterialButton"/>
 
     <EditText
         android:id="@+id/otherInfo"
         android:layout_width="0dp"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:hint="@string/other"
         android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/coll" />
+        app:layout_constraintRight_toRightOf="parent" />
 
     <EditText
         android:id="@+id/name"
@@ -56,42 +52,42 @@
 
     <TextView
         android:id="@+id/coll"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:hint="@string/coll_time"
-        android:textSize="18sp"
-        android:textColor="#3F51B5"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/spinner" />
-
-    <Spinner
-        android:id="@+id/spinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:hint="@string/coll_t"
+        android:textColor="#3F51B5"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:background="#C5CAE9"
         android:entries="@array/time_array"
         android:textColor="#ffff"
+        app:layout_constraintRight_toLeftOf="@+id/button"
+        app:layout_constraintLeft_toRightOf="@+id/coll"
         app:layout_constraintBottom_toBottomOf="@+id/coll"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/coll" />
+        app:layout_constraintTop_toTopOf="@+id/coll"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="16dp" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="344dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="32dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         app:layout_constraintBottom_toTopOf="@+id/otherInfo"
@@ -117,7 +113,9 @@
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintLeft_toLeftOf="@+id/imageView"
-        app:layout_constraintRight_toRightOf="@+id/imageView" />
+        app:layout_constraintRight_toRightOf="@+id/imageView"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
 
 
 </android.support.constraint.ConstraintLayout>

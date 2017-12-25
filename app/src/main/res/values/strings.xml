@@ -1,10 +1,16 @@
 <resources>
     <string name="prod_list_name">Chemist Product List</string>
-    <string name="perscrip_name">Prescription Order</string>
+    <string name="perscrip_name">Prescription Orders</string>
     <string name="home_name">Derek Aherne Assign3 2017</string>
 
     <string name="product_tv">Chemist product list</string>
     <string name="prescription_tv">Order prescriptions</string>
+
+    <string name="email_recip">pharmacy@pharmacy.com</string>
+    <string name="name">Name</string>
+    <string name="email_subject">Prescription Orders for </string>
+    <string name="add_inst">Additional Instructions</string>
+    <string name="coll_t">Collection Time</string>
 
     <string name="pills">PHARMACY</string>
     <string name="perfume">FRAGRANCE</string>
