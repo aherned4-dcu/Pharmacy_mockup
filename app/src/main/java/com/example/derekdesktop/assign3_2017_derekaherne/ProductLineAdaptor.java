@@ -4,11 +4,9 @@ import android.app.Activity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -79,8 +77,6 @@ public class ProductLineAdaptor extends ArrayAdapter<ProductLine> {
         // Get the image resource ID from the current ProductLine object and
         // set the image to iconView
         iconView.setImageResource(currentProductLine.getImageResourceId());
-
-
 
         // Return the whole list item layout (containing TextViews and an ImageView)
         // so that it can be shown in the ListView

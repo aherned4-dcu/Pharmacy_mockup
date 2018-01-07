@@ -31,12 +31,14 @@ public class ProductLine {
 
     /**
      * Get the name of the product
+     * @return
      */
     public String getVersionName() {
         return mName;
     }
     /**
      * Get the price of the product
+     * @return
      */
     public String getPrice() {
         return price;
@@ -44,6 +46,7 @@ public class ProductLine {
 
     /**
      * Get the image resource ID
+     * @return
      */
     public int getImageResourceId() {
         return mImageResourceId;

@@ -23,6 +23,9 @@ public class HomePage extends AppCompatActivity {
 
     public static final String TAG = HomePage.class.getSimpleName(); //Log tag
     @Override
+    /**
+     * Creation of the home page activity. Generates a list for each product line
+     */
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
